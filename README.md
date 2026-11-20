@@ -1,22 +1,22 @@
-# The Anatomy of Human Body — 17-page website
+# The Anatomy of Human Body — revised 17-page website
 
-A responsive, interactive anatomy presentation built with vanilla HTML, CSS and JavaScript.
+Built with vanilla HTML, CSS and JavaScript. No npm/build step required.
 
-## Run locally
-Open `index.html` in a browser. No build tools or npm packages are required.
+## Files
+- `index.html` — all 17 presentation pages
+- `styles.css` — responsive dark medical theme
+- `script.js` — page navigation, skeleton illustrations, pointer labels and key-point content
 
-## Deploy to GitHub Pages
-1. Create a GitHub repository.
-2. Upload `index.html`, `styles.css`, and `script.js` to the repository root.
-3. Open **Settings → Pages**.
-4. Under **Build and deployment**, choose **Deploy from a branch**.
-5. Select your branch (usually `main`) and folder `/ (root)`, then Save.
-6. Wait for GitHub Pages to publish your site.
+## Run
+Open `index.html` in a browser.
+
+## GitHub Pages
+Upload these three files to the root of a GitHub repository. Then open Settings → Pages → Deploy from a branch → `main` → `/ (root)` → Save.
 
 ## Navigation
-- Use the bottom arrows or keyboard arrow keys.
-- On touch devices, swipe left/right.
-- Open **Overview** to jump to any of the 17 pages.
+Use the bottom arrows, keyboard arrow keys, touch swipe, or Pages menu. The five sensory organ cards jump directly to their pages.
 
-## Notes
-All diagrams are original vector illustrations drawn in the JavaScript source. The content is for general educational purposes and is not medical advice.
+## Diagram sources
+Pages 11–15 use labelled anatomy diagrams hosted on Wikimedia Commons. Their image-source links are shown below each diagram. Internet access is needed to load those five reference images.
+
+Educational content only; not medical advice.
