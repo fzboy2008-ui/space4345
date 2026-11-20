@@ -5,3 +5,38 @@
 /* Revision: keep the key-point card present on smaller screens too. */
 @media(max-width:900px){.anatomy-grid{grid-template-columns:minmax(150px,.75fr) minmax(220px,1.1fr)}.key-card{display:block;grid-column:1/-1;padding:12px 15px}.key-card h3{margin:7px 0}.key-card ul{display:grid;grid-template-columns:repeat(3,1fr);gap:0 12px}.key-card li{font-size:9px;padding:7px 0}}
 @media(max-width:600px){.anatomy-grid{display:flex;flex-direction:column;align-items:stretch;gap:9px}.key-card{display:block;padding:10px 12px}.key-card>small{font-size:7px}.key-card h3{font-size:15px;margin:5px 0}.key-card ul{display:grid;grid-template-columns:repeat(3,1fr);gap:0 8px}.key-card li{font-size:8px;line-height:1.4;padding:5px 0}.cover-number{display:none}}
+
+/* Mobile reliability patch: stable viewport, visible controls and compact cover. */
+html,body{min-height:100%;height:100%;height:100dvh;overscroll-behavior:none}
+.top{position:fixed;top:0;left:0;right:0;height:64px;z-index:20}
+#deck{position:fixed;inset:64px 0 64px;min-height:0;overflow:hidden}
+.page{inset:0!important;overflow-y:auto;overscroll-behavior:contain;padding:24px 6%;}
+.page.active{z-index:1}
+.bottom{position:fixed!important;left:0;right:0;bottom:0;height:64px;z-index:30;padding-bottom:env(safe-area-inset-bottom);}
+.menu{appearance:none!important;-webkit-appearance:none!important;background:#102638!important;border:1px solid #294254!important;color:#edf4f7!important;padding:10px 14px!important;border-radius:6px!important;font:600 12px "DM Sans",sans-serif!important;line-height:1!important;box-shadow:none!important}
+.drawer{z-index:50!important}.drawer-head button{appearance:none;-webkit-appearance:none}
+@media(max-width:600px){
+  .top{height:58px;padding:0 16px}
+  #deck{inset:58px 0 calc(60px + env(safe-area-inset-bottom))}
+  .page{padding:16px 18px 18px!important}
+  .bottom{height:60px;padding:0 14px calc(env(safe-area-inset-bottom) + 4px)!important;gap:10px}
+  .bottom>button{flex:0 0 36px;height:34px;min-width:36px}
+  .progress{min-width:0;width:auto;flex:1}
+  .cover{justify-content:center;gap:clamp(8px,2.5vh,20px);padding:12px 18px!important}
+  .cover-skeleton{height:min(39svh,330px)!important;width:min(72vw,270px)!important;flex:0 1 auto}
+  .cover h1{font-size:clamp(27px,7.4vw,36px)!important;line-height:1.08!important;letter-spacing:-1.2px!important;max-width:340px;width:100%;margin:0 auto!important;text-wrap:balance}
+  .cover-number{display:none!important}
+  .anatomy-page{padding-top:14px!important}
+  .anatomy-grid{gap:10px!important}
+  .skeleton-panel{height:37svh!important;min-height:210px!important;max-height:300px!important}
+  .key-card{margin-bottom:10px}
+  .sense-cards{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  .sense-card:last-child{grid-column:1/-1}
+  .organ-layout{height:auto!important;min-height:0}
+  .reference-diagram{min-height:190px!important;height:34svh!important;flex:none!important}
+}
+@media(max-height:700px) and (max-width:600px){
+  .cover{gap:7px}
+  .cover-skeleton{height:34svh!important;max-height:230px!important}
+  .cover h1{font-size:27px!important}
+}
