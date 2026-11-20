@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#07111d">
+  <title>The Anatomy of Human Body</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Anatomy presentation home"><span class="brand-mark">✳</span><span>ANATOMY<span class="brand-muted"> / FIELD GUIDE</span></span></a>
+    <div class="top-meta"><span class="live-dot"></span> HUMAN BIOLOGY <span class="meta-divider">•</span> INTERACTIVE ATLAS</div>
+    <button class="overview-btn" id="overviewBtn" type="button">☷ <span>Overview</span></button>
+  </header>
+
+  <main class="presentation" id="presentation">
+    <section class="slide cover active" data-page="1">
+      <div class="cover-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span> A VISUAL GUIDE TO YOU</div>
+        <h1>The Anatomy<br>of <em>Human Body.</em></h1>
+        <p class="cover-lede">Explore the remarkable systems, structures and senses that work together to make the human body function.</p>
+        <button class="primary-btn" id="startBtn">Explore the body <span>↗</span></button>
+        <div class="cover-foot"><span>17 CHAPTERS</span><span>•</span><span>ONE INCREDIBLE SYSTEM</span></div>
+      </div>
+      <div class="cover-art">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="cover-cross cross-a">+</div><div class="cover-cross cross-b">+</div>
+        <div class="cover-skeleton" id="coverSkeleton"></div>
+        <div class="art-label label-top">FIG. 01 <span>HUMAN FORM</span></div>
+        <div class="art-label label-bottom">206 BONES <span>≈ 600 MUSCLES</span></div>
+      </div>
+      <div class="cover-index">01 <span>/</span> 17</div>
+    </section>
+    <section class="slide" id="contentSlide" data-page="2">
+      <div class="chapter-head"><div class="eyebrow" id="chapterEyebrow">01 — BODY SYSTEMS</div><div class="chapter-count" id="chapterCount">02 / 17</div></div>
+      <div class="chapter-layout">
+        <div class="chapter-copy"><div class="section-tag" id="sectionTag">BODY SYSTEMS</div><h2 id="chapterTitle">The skeletal<br><em>system.</em></h2><p class="chapter-desc" id="chapterDesc"></p><div class="fact-strip" id="factStrip"></div></div>
+        <div class="anatomy-stage"><div class="stage-ring ring-one"></div><div class="stage-ring ring-two"></div><div class="stage-grid"></div><div class="diagram" id="diagram"></div><div class="diagram-caption" id="diagramCaption">ANATOMICAL STUDY / 01</div></div>
+        <aside class="key-card"><div class="card-kicker"><span class="card-icon">✳</span> QUICK REFERENCE</div><h3>Key points</h3><ul id="keyPoints"></ul><div class="card-bottom"><span>FIELD NOTES</span><span id="cardIndex">01</span></div></aside>
+      </div>
+      <div class="topic-footer"><span id="topicFooter">BODY SYSTEMS / STRUCTURE & FUNCTION</span><span>SCROLL LESS. DISCOVER MORE.</span></div>
+    </section>
+    <section class="slide senses-intro" data-page="10">
+      <div class="sense-intro-left"><div class="eyebrow"><span class="eyebrow-line"></span> CHAPTER 09 — PERCEPTION</div><h2>The five<br><em>senses.</em></h2><p>Our senses are the body's connection to the world. Specialised receptors gather information and send signals to the brain, helping us understand everything around us.</p><div class="sense-list"><span>01 / SIGHT</span><span>02 / HEARING</span><span>03 / SMELL</span><span>04 / TASTE</span><span>05 / TOUCH</span></div><button class="primary-btn" id="sensesBtn">Explore the senses <span>↗</span></button></div>
+      <div class="sense-orbit"><div class="sense-orbit-ring"></div><div class="sense-center">5<span>SENSES</span></div><div class="sense-node node-eye">◉<small>SIGHT</small></div><div class="sense-node node-ear">◖<small>HEARING</small></div><div class="sense-node node-nose">⌁<small>SMELL</small></div><div class="sense-node node-tongue">◡<small>TASTE</small></div><div class="sense-node node-hand">✋<small>TOUCH</small></div></div>
+      <div class="cover-index">10 <span>/</span> 17</div>
+    </section>
+    <section class="slide" id="senseSlide" data-page="11">
+      <div class="chapter-head"><div class="eyebrow" id="senseEyebrow">10 — THE FIVE SENSES</div><div class="chapter-count" id="senseCount">11 / 17</div></div>
+      <div class="sense-layout"><div class="sense-copy"><div class="section-tag">SENSE STUDY / 01</div><h2 id="senseTitle">The sense<br><em>of sight.</em></h2><p id="senseDesc"></p><div class="sense-function"><span class="function-icon">↗</span><div><b>WHAT IT DOES</b><span id="senseFunction"></span></div></div><div class="sense-stat" id="senseStat"></div></div><div class="sense-diagram-wrap"><div class="sense-diagram" id="senseDiagram"></div><div class="diagram-caption" id="senseCaption">LABELLED ANATOMY / SIGHT</div></div><aside class="key-card sense-card"><div class="card-kicker"><span class="card-icon">✳</span> ANATOMY NOTES</div><h3>Key structures</h3><ul id="sensePoints"></ul><div class="card-bottom"><span>FIVE SENSES</span><span id="senseCardIndex">01</span></div></aside></div>
+      <div class="topic-footer"><span>THE FIVE SENSES / RECEPTORS & PERCEPTION</span><span>HUMAN ANATOMY FIELD GUIDE</span></div>
+    </section>
+    <section class="slide key-summary" data-page="16">
+      <div class="eyebrow"><span class="eyebrow-line"></span> CHAPTER 15 — RECAP</div><h2>What makes us<br><em>human.</em></h2><p class="summary-lede">The body is a connected system. Each structure has a role, and every role contributes to keeping us alive, aware and in motion.</p>
+      <div class="summary-grid">
+        <div class="summary-item"><span>01</span><b>Structure</b><p>The skeleton supports the body, protects organs and provides a framework for movement.</p></div>
+        <div class="summary-item"><span>02</span><b>Control</b><p>The brain and nervous system receive information, process it and coordinate responses.</p></div>
+        <div class="summary-item"><span>03</span><b>Circulation</b><p>The heart and blood vessels transport oxygen, nutrients and other essential materials.</p></div>
+        <div class="summary-item"><span>04</span><b>Energy</b><p>The lungs, digestive system and cells work together to supply what the body needs.</p></div>
+        <div class="summary-item"><span>05</span><b>Protection</b><p>Skin, bones and immune defences help protect the body from injury and infection.</p></div>
+        <div class="summary-item"><span>06</span><b>Perception</b><p>Five senses detect changes around us and help the brain interpret the world.</p></div>
+      </div>
+      <div class="summary-bottom"><span>REMEMBER: BODY SYSTEMS WORK TOGETHER.</span><span>16 / 17</span></div>
+    </section>
+    <section class="slide ending" data-page="17">
+      <div class="end-glow"></div><div class="end-symbol">✳</div><div class="eyebrow">END OF FIELD GUIDE / 17</div><h2>Thank <em>you.</em></h2><p>Every breath, heartbeat and movement is part of an extraordinary design. Keep exploring. Keep asking questions.</p><div class="end-rule"></div><div class="end-credit"><span>THE ANATOMY OF HUMAN BODY</span><span>END OF PRESENTATION</span></div><button class="primary-btn" id="restartBtn">↺ Start again</button>
+    </section>
+  </main>
+
+  <footer class="controls">
+    <button class="nav-arrow" id="prevBtn" aria-label="Previous page" disabled>←</button>
+    <div class="progress-area"><div class="progress-label"><span id="progressTitle">INTRODUCTION</span><span id="progressText">01 / 17</span></div><div class="progress-track"><div class="progress-fill" id="progressFill"></div></div></div>
+    <button class="nav-arrow next-arrow" id="nextBtn" aria-label="Next page">→</button>
+  </footer>
+  <div class="overview-panel" id="overviewPanel" aria-hidden="true"><div class="overview-head"><div><span class="eyebrow">NAVIGATION</span><h3>Explore chapters</h3></div><button id="closeOverview" aria-label="Close overview">×</button></div><div class="overview-list" id="overviewList"></div></div>
+  <div class="scrim" id="scrim"></div>
+  <script src="script.js"></script>
+</body>
+</html>
