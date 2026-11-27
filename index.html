@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#080a12"><title>VOID OS — Personal Interface</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="scanlines"></div><div class="cursor-glow" id="glow"></div>
+<div class="boot" id="boot"><div class="boot-logo">V<span>Ø</span>ID</div><div class="boot-line"><i></i></div><small>INITIALIZING PERSONAL INTERFACE...</small></div>
+<header class="top">
+  <a class="logo" href="#"><span>◈</span> VOID<span class="thin">/OS</span></a>
+  <div class="top-center"><span class="live-dot"></span> SYSTEM ONLINE <b id="clock">00:00:00</b></div>
+  <button class="icon-btn" id="themeBtn" title="Toggle atmosphere">◐</button>
+</header>
+<main>
+<section class="welcome">
+  <div class="welcome-left"><div class="eyebrow">PERSONAL DIGITAL SPACE <span>V.04.27</span></div>
+    <h1>Make your<br>own <em>reality.</em></h1>
+    <p>A little control room for curiosity. Explore the tools, leave a note, test your reflexes, or just enjoy the atmosphere.</p>
+    <div class="welcome-actions"><button class="launch" data-open="terminal">OPEN TERMINAL <span>↗</span></button><button class="quiet" data-open="about">WHAT IS THIS?</button></div>
+  </div>
+  <div class="core-wrap"><div class="core-ring r1"></div><div class="core-ring r2"></div><div class="core-ring r3"></div><div class="core"><span>V</span></div><div class="core-tag tag-a">CORE TEMP <b>32.8°</b></div><div class="core-tag tag-b">SIGNAL <b>STABLE</b></div><div class="core-cross">+</div></div>
+</section>
+<section class="dashboard">
+  <div class="section-top"><div><span class="eyebrow">YOUR WORKSPACE</span><h2>Pick a <em>portal.</em></h2></div><span class="hint">SELECT AN APP TO LAUNCH ↘</span></div>
+  <div class="apps">
+    <button class="app-card terminal-card" data-open="terminal"><span class="app-num">01 / SYSTEM</span><span class="app-icon">⌘</span><strong>Terminal</strong><small>Talk to the machine</small><span class="app-arrow">↗</span></button>
+    <button class="app-card notes-card" data-open="notes"><span class="app-num">02 / MEMORY</span><span class="app-icon">▤</span><strong>Memory Vault</strong><small>Save a thought locally</small><span class="app-arrow">↗</span></button>
+    <button class="app-card timer-card" data-open="timer"><span class="app-num">03 / FOCUS</span><span class="app-icon">◷</span><strong>Focus Chamber</strong><small>Make time yours</small><span class="app-arrow">↗</span></button>
+    <button class="app-card game-card" data-open="game"><span class="app-num">04 / REFLEX</span><span class="app-icon">✳</span><strong>Neon Reflex</strong><small>Test your reaction</small><span class="app-arrow">↗</span></button>
+  </div>
+</section>
+<section class="status-row"><div><span class="eyebrow">LOCAL SYSTEM STATUS</span><div class="status-items"><span><i></i> ALL SYSTEMS NOMINAL</span><span>STORAGE <b>LOCAL ONLY</b></span><span>NETWORK <b>NOT REQUIRED</b></span></div></div><div class="date-box"><span id="date">—</span><b>YOUR SPACE. YOUR RULES.</b></div></section>
+</main>
+<footer><span>◈ VOID/OS</span><span>BUILT FOR THE CURIOUS — 2026</span><span>NO TRACKING. NO BACKEND.</span></footer>
+
+<div class="overlay" id="overlay">
+  <div class="window" role="dialog" aria-modal="true">
+    <div class="win-head"><div class="win-title"><i></i><i></i><i></i><span id="winName">TERMINAL</span></div><button id="closeWin">×</button></div>
+    <div class="win-body" id="winBody"></div>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+<script src="app.js"></script>
+</body></html>
